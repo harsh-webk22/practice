@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            test
+        </title>
+        <link rel="stylesheet" href="./index.css"/>
+    </head>
+    <body>
+        <select>
+            <option value="none">none</option>
+            <option value="comedy">comedy</option>
+            <option value="action">action</option>
+            <option value="romantic">romatic</option>
+        </select>
+
+        <div class="container">
+            <div class="movies">
+                <heading>Example 1</heading>
+                <p data-catoegory="action">$300</p>
+            </div>
+    
+            <div class="movies">
+                <heading>Example 2</heading>
+                <p data-catoegory="action">$300</p>
+            </div>
+    
+            <div class="movies">
+                <heading>Example 3</heading>
+                <p data-catoegory="comedy">$300</p>
+            </div>
+    
+            <div class="movies">
+                <heading>Example 4</heading>
+                <p data-catoegory="action">$300</p>
+            </div>
+    
+            <div class="movies">
+                <heading>Example 5</heading>
+                <p data-catoegory="romantic">$300</p>
+            </div>
+    
+            <div class="movies">
+                <heading>Example 6</heading>
+                <p data-catoegory="romantic">$300</p>
+            </div>
+    
+            <div class="movies">
+                <heading>Example 7</heading>
+                <p data-catoegory="romantic">$300</p>
+            </div>
+    
+        </div>
+        
+
+        <script>
+            let allMovies = document.querySelectorAll(".movies");
+            let select = document.querySelector("select");
+            select.addEventListener('change' , (e)=>{
+                if(select.value==="none"){
+                        for(let i=0;i<allMovies.length;i++){
+                        allMovies[i].style.display = "block"; 
+                        }
+                } else{
+                    
+                    for(let i=0;i<allMovies.length;i++){
+                        let attr = allMovies[i].querySelector("p").getAttribute("data-catoegory");
+                        if(attr === select.value){
+                            allMovies[i].style.display = "block";
+                        } else{
+                            allMovies[i].style.display = "none";
+                        }
+                         
+                    }
+                }
+            })
+        </script>
+    </body>
+</html>
