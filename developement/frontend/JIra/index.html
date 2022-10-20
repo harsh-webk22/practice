@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
     <title>Jira</title>
 </head>
 <body>
@@ -17,16 +20,33 @@
         </div>
         <div class="action-btn-box">
             <div class="action-btn cross">
-                <p>x</p>
+                <i class="fa-sharp fa-solid fa-xmark"></i>
             </div>
 
             <div class="action-btn plus">
-                <p>+</p>
+                <i class="fa-solid fa-plus"></i>
             </div>
         </div>
     </div>
-    <div class="task-box">
 
+
+    <div class="main-box">
+      
     </div>
+
+    <div class="modal-cont">
+        <textarea class="textarea"></textarea>
+        <div class="priority-color-cont">
+            <div class="priority-color color1"></div>
+            <div class="priority-color color2"></div>
+            <div class="priority-color color3"></div>
+            <div class="priority-color color4 border"></div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./script.js"></script>
 </body>
 </html>

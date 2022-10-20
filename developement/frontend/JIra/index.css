@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: sans-serif;
+}
+
 .nav-box{
     width: 100vw;
     height: 5rem;
@@ -78,4 +82,86 @@
 
 .action-btn:hover{
     background-color: rgb(34, 33, 33);
+}
+
+.modal-cont{
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50vw;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    height: 45vh;
+    background-color: antiquewhite;
+    display: none;
+    box-shadow: 0 0 10px 1px black;
+}
+
+.textarea{
+    height: 100%;
+    width: 75%;
+    padding: 2rem;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 1.5rem;
+}
+
+.priority-color-cont{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.priority-color{
+    width: 80%;
+    height: 4rem;
+}
+
+.main-box{
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ticket-cont{
+    width:17rem;
+    height: 12rem;
+    background-color: rgb(238, 238, 238);
+}
+
+.ticket-color{
+    height: 1rem;
+}
+
+.ticket-id{
+    height: 2rem;
+    background-color: orange;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.icon{
+    height: 2rem;
+    color: rgb(192, 192, 192);
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right:.5rem;
+}
+
+.taskarea{
+    padding: 1rem;
+    height: 7rem;
+    outline: none;
+}
+
+.border{
+    border: 10px solid black;
 }
