@@ -1,0 +1,243 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding:4rem 1rem;
+    font-family: "Inter", sans-serif;
+}
+.container{
+    max-width: 1440px;
+    margin: auto;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-logo img{
+    width: 4rem;
+    z-index: 1;
+}
+
+.menu{
+    display: none;
+}
+
+.logo img{
+    width: 4rem;
+}
+
+.active-menu{
+    display: block;
+    position: fixed;
+    z-index: 0  ;
+    top:0;
+    right:0;
+    width: 70%;
+    height: 100vh;
+    background-color: white;
+    padding-top: 12rem;
+}
+
+.active-menu a{
+    text-decoration: none;
+    margin: 1.2rem;
+    color:rgb(80, 80, 80);
+    font-size: 1.7rem;
+    display: block;
+}
+
+.menu a:hover{
+    color: black;
+}
+
+.main-cont{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.primary-box{
+    width: 100%;
+}
+
+.primary-image{
+    width: 100%;
+    background-image: url('./assets/images/image-web-3-desktop.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 20rem;
+}
+
+.primary-headingBox{
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.primary-heading{
+    padding-right: 1rem;
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+.description{
+    margin-top: 1rem;
+}
+
+.description p{
+    font-size: 1.2rem;
+    word-spacing: 1.5px;
+    line-height: 1.5;
+    color:rgb(80, 80, 80);
+}
+
+.description button{
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    color: white;
+    background-color: hsl(5, 85%, 63%);
+    letter-spacing: 3.8px;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    border:none;
+}
+
+.secondary-box{
+    width: 100%;
+    background-color:hsl(240, 100%, 5%);
+    padding: 2.5rem 2.5rem;
+    margin-top: 2rem;
+}
+
+.new-heading{
+    font-size: 2.5rem;
+    color:hsl(35, 77%, 62%);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+hr{
+    margin-bottom: 2rem;
+}
+
+.info-box{
+    color: white;
+}
+
+
+.info-box h2{
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.info-box p{
+    color : rgb(156, 156, 156);
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+
+.second-section{
+    margin-top: 2rem;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image-card{
+    height: 8rem;
+    width: 28rem;
+    display: flex;
+    margin-top: 2rem;
+}
+
+.profile-image{
+    height: 100%;
+    width: 25%;
+}
+.profile-image img{
+    height: 100%;
+}
+
+.info{
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.info h2{
+    font-weight: bold;
+    color: rgb(80, 80, 80);
+}
+
+.info h3{
+    margin-top: .5rem;
+    font-size: 1rem;
+}
+
+
+.info p{
+    color: rgb(80, 80, 80);
+    margin-top: .5rem;
+    word-spacing: 2px;
+    line-height: 1.6rem;
+}
+
+@media screen and (min-width: 945px){
+    
+    .primary-box{
+        width: 68%;
+    }
+    .main-cont{
+        display: flex;
+        flex-wrap:wrap ;
+    }
+
+    .secondary-box{
+        width: 30%;
+        margin-top: 0;
+    }
+
+    .menu a{
+        text-decoration: none;
+        margin-left: 1rem;
+        color:rgb(80, 80, 80);
+        font-size: 1rem;
+    }    
+
+}
+
+
+@media screen and (min-width: 720px){   
+    .menu-logo{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+    }
+    
+    .primary-headingBox{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .primary-heading{
+        width: max(55% , 365px);
+        font-size: 2rem;
+    }
+    .description{
+        margin-top: 0;
+        width: 45%;
+    }
+}
